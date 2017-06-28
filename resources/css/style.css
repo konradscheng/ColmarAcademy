@@ -1,5 +1,10 @@
 /* Header */
 
+html {
+  font-family: "Copse", serif;
+  color: #1B4B36;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -8,6 +13,12 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid black;
+  width: 98%;
+  position: fixed;
+  z-index: 1;
+  background-color: #313131;
+  color: #7EB19F;
+  opacity: 0.9;
 }
 
 header a {
@@ -18,20 +29,37 @@ header a {
 .logo {
   display: flex;
   align-items: center;
+  width: 350px;
 }
 
-nav span {
-  margin-right: 16px;
+.logo img {
+  width: 10%;
+  height: 10%;
+}
+
+.logo span {
+  font-family: "Bungee Shade", cursive;
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+nav span a {
+  margin-right: 36px;
+  color: #7EB19F;
 }
 
 /* Banner */
 
 .banner {
-  padding: 32px 24px;
+  padding-top: 96px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  background-color: #EC625F;
 }
 
 .banner img {
@@ -46,12 +74,10 @@ nav span {
 
 .banner-text h1 {
   width: 70%;
-  border: 1px solid black;
 }
 
 .banner-text h2 {
   width: 70%;
-  border: 1px solid black;
 }
 
 .start-here {
@@ -60,7 +86,9 @@ nav span {
   width: 70%;
   padding-top: 8px;
   padding-bottom: 8px;
+  background-color: #525252;
   border: 1px solid black;
+  color: #AEBD77;
 }
 
 /* More Info/Articles */
@@ -68,6 +96,8 @@ nav span {
 .more-info {
   display: flex;
   border: 1px solid black;
+  background-color: #525252;
+  color: #AEBD77;
 }
 
 /* Left Side */
@@ -98,11 +128,6 @@ nav span {
   align-items: center;
   width: 423px;
   height: 168px;
-  border: 1px solid black;
-}
-
-.more-info-right {
-  border-left: 1px solid black;
 }
 
 .more-info-right .article img {
@@ -118,6 +143,11 @@ nav span {
   margin-bottom: 8px;
 }
 
+.guest {
+  background-color: #EC625F;
+  color: #1B4B36;
+}
+
 /* Start Learning */
 
 .start-learning {
@@ -127,10 +157,13 @@ nav span {
   padding-top: 32px;
   padding-bottom: 32px;
   border: 1px solid black;
+  background-color: #EC625F;
 }
 
 .start-learning h2 {
   margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .row {
@@ -146,6 +179,8 @@ nav span {
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 20px;
+  background-color: #525252;
+    color: #AEBD77;
 }
 
 .class img {
@@ -173,18 +208,21 @@ nav span {
 
 .thesis-exhibit {
   padding: 32px 24px;
-  border: 1px solid black;
+  border-bottom: 3px solid #EC625F;
+  background-color: #525252;
+  color: #AEBD77;
 }
 
 .thesis-exhibit .thesis-title {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .thesis-sections {
   display: flex;
-  border: 1px solid black;
 }
 
 /* Left Side */
@@ -193,6 +231,7 @@ nav span {
   display: flex;
   flex-direction: column;
   width: 60%;
+  margin-right: 24px;
 }
 
 .thesis-left video {
@@ -212,11 +251,6 @@ nav span {
   align-items: center;
   width: 423px;
   height: 168px;
-  border: 1px solid black;
-}
-
-.thesis-right {
-  border-left: 1px solid black;
 }
 
 .thesis-right .article img {
@@ -232,17 +266,25 @@ nav span {
   margin-bottom: 8px;
 }
 
+.fisma {
+  background-color: #EC625F;
+  color: #1B4B36;
+}
+
+
 /* Footer */
 
 footer {
   display: flex;
   justify-content: space-between;
-  margin: 10px 24px;
+  padding: 10px 24px;
   height: 50px;
+  background-color: #525252;
+  color: #AEBD77;
 }
 
 .terms-privacy {
   display: flex;
-  width: 100px;
+  width: 120px;
   justify-content: space-between;
 }
