@@ -72,10 +72,11 @@ nav a {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   header {
-    width: 87%;
+    width: 100%;
     position: static;
+    padding: 0;
   }
 
   nav .desktop {
@@ -88,6 +89,8 @@ nav a {
 
   header nav {
     width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
   }
@@ -154,11 +157,11 @@ nav a {
   text-shadow: 2px 2px 3px #EFE94B;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .banner {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: none;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
   }
@@ -174,8 +177,16 @@ nav a {
   }
 
   .banner-text {
-    padding: 24px;
-    width: 95%;
+    margin: 0;
+    padding: 32px 24px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .start-here {
+    width: 100%;
   }
 
   .banner-text h1 {
@@ -274,7 +285,7 @@ nav a {
   color: #1B4B36;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
@@ -282,16 +293,27 @@ nav a {
   .more-info-right {
     margin: 0;
     border: none;
+    width: 100%;
   }
 
   .more-info-right .article {
     border: none;
-    width: 370px;
+    width: 100%;
+  }
+
+  .more-info-right .article img {
+    width: 20%;
   }
 
   .guest {
     background-image: url(../../resources/images/Noise-Texture-Grey.png);
     color: #AEBD77;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .more-info-right .article img {
+    width: 35%;
   }
 }
 
@@ -364,7 +386,7 @@ nav a {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .start-learning .desktop .row .class {
     display: none;
   }
@@ -378,7 +400,9 @@ nav a {
   }
 
   .row {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .class {
@@ -387,6 +411,11 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .class h3 {
+    font-size: 24px;
+    margin: 0;
   }
 }
 
@@ -480,7 +509,7 @@ nav a {
   color: #1B4B36;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
@@ -528,7 +557,7 @@ footer {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   footer .desktop {
     display: none;
   }
