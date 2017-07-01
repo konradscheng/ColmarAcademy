@@ -53,10 +53,34 @@ header a:hover {
   text-shadow: 4px 4px 3px #000000;
 }
 
-nav span a {
+nav a {
   margin-right: 36px;
   color: #7EB19F;
   font-size: 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    width: 81%;
+  }
+
+  nav .desktop {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+  }
+
+  header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 /* Banner */
@@ -88,7 +112,6 @@ nav span a {
 }
 
 .banner-text h1 {
-
   font-size: 50px;
   text-decoration: underline;
   text-decoration-color: #222222;
@@ -119,6 +142,41 @@ nav span a {
 .start-here span:hover {
   font-size: 40px;
   text-shadow: 2px 2px 3px #EFE94B;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: none;
+    padding-top: 88px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .banner-text {
+    padding: 24px;
+    width: 95%;
+  }
+
+  .banner-text h1 {
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-color: #222222;
+    margin-bottom: 8px;
+    text-shadow: 4px 4px 3px #538F6A;
+  }
 }
 
 /* More Info/Articles */
@@ -207,11 +265,33 @@ nav span a {
   color: #1B4B36;
 }
 
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .more-info-right {
+    margin: 0;
+    border: none;
+  }
+
+  .more-info-right .article {
+    border: none;
+    width: 370px;
+  }
+
+  .guest {
+    background-image: url(../../resources/images/Noise-Texture-Grey.png);
+    color: #AEBD77;
+  }
+}
+
 /* Start Learning */
 
 .start-learning {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -256,20 +336,49 @@ nav span a {
 .class h3 {
   margin-top: 16px;
   margin-bottom: 36px;
-  font-size: 24px;
+  font-size: 32px;
   text-align: center;
   font-weight: bold;
+  font-style: italic;
 }
 
 .class h4 {
   margin-bottom: 16px;
   margin-left: 16px;
   text-decoration: underline;
+  font-size: 20px;
 }
 
 .class p {
   margin-bottom: 24px;
   margin-left: 16px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .start-learning .desktop .row .class {
+    display: none;
+  }
+
+  .start-learning {
+    padding-bottom: 16px;
+  }
+
+  .start-learning h2 {
+    font-size: 32px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .class {
+    width: 90%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Thesis Exhibit */
@@ -361,6 +470,37 @@ nav span a {
   color: #1B4B36;
 }
 
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .thesis-exhibit {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 24px;
+    margin: 0;
+  }
+
+  .thesis-title h2 {
+    font-size: 32px;
+  }
+
+  .thesis-left {
+    margin: 0;
+    width: 100%;
+  }
+
+  .thesis-left video {
+    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -376,4 +516,16 @@ footer {
   display: flex;
   width: 120px;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  footer .desktop {
+    display: none;
+  }
+
+  footer {
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+  }
 }
